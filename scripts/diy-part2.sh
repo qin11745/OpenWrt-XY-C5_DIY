@@ -62,7 +62,7 @@ git clone --depth=1 https://github.com/project-openwrt/openwrt-gowebdav
 # Add luci-app-jd-dailybonus
 git clone --depth=1 https://github.com/jerrykuku/node-request
 git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
-cp luci-app-jd-dailybonus/ ../lean/ -r
+cp luci-app-jd-dailybonus/ package/lean/ -r
 
 # Add luci-theme-rosy
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-rosy
