@@ -18,6 +18,10 @@ pushd ../package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon luci-theme-argon
 
+# Add luci-app-jd-dailybonus
+git clone --depth=1 https://github.com/jerrykuku/node-request
+git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
+
 # 更改主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ../feeds/luci/collections/luci/Makefile
 
@@ -59,9 +63,6 @@ git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 # Add luci-app-gowebdav
 git clone --depth=1 https://github.com/project-openwrt/openwrt-gowebdav
 
-# Add luci-app-jd-dailybonus
-git clone --depth=1 https://github.com/jerrykuku/node-request
-git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
 
 # Add luci-theme-rosy
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-rosy
